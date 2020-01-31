@@ -73,7 +73,7 @@ build{
     dependsOn testClasses
     doFirst {
         javaexec {
-            main = "com.cucumber.runner.CucumberRunner"
+            main = "com.cucumber.runner.Runner"
             classpath = sourceSets.main.runtimeClasspath
         }
 
