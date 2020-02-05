@@ -9,8 +9,7 @@ import cucumber.api.junit.Cucumber;
 		strict=true, 
 		features= { "src/test/resources/features"},
 		glue= {"com.stepdefs"},
-		plugin = { "html:target/cucumber-html-report","json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
-	        "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml" },
+		plugin = {"json:target/cucumber.json" },
 		monochrome=true
 		)
 public class CucumberRunner {
