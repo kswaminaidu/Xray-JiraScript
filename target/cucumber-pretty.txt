@@ -1,0 +1,9 @@
+@runthis
+Feature: Google search Test
+
+  @runthis
+  Scenario: search scenario                       # src/test/resources/features/google.feature:22
+    Given url of google "https://www.google.com/" # Googlestepdefs.java:16
+    When text to search "swami"                   # Googlestepdefs.java:34
+    When click on search                          # Googlestepdefs.java:38
+    Then validate page title                      # Googlestepdefs.java:42
