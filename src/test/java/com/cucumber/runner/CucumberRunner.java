@@ -11,8 +11,7 @@ import cucumber.api.junit.Cucumber;
 		glue= {"com.stepdefs"},
 		plugin = { "html:target/cucumber-html-report","json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
 	        "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml" },
-		monochrome=true,
-		tags={"@runthis"}
+		monochrome=true
 		)
 public class CucumberRunner {
 
